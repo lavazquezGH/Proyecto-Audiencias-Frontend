@@ -1,1 +1,109 @@
-<p>audiencias works!</p>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+<div class="bloque-horizontal">
+  <!-- Encabezado con título y botón -->
+  <div class="header">
+    <h2>Buscar Audiencias</h2>
+    <button>Crear Audiencia</button>
+  </div>
+
+  <!-- Fila de filtros -->
+  <div class="campos-wrap">
+    <div class="campo">
+      <h3>Sala</h3>
+      <select id="salas">
+        <option value="">Seleccionar una sala</option>
+        <option value="sala1">Sala 1</option>
+        <option value="sala2">Sala 2</option>
+        <option value="sala3">Sala 3</option>
+        <option value="sala4">Sala 4</option>
+      </select>
+    </div>
+
+    <div class="campo">
+      <h3>Juez - Fiscal</h3>
+      <select id="jueces">
+        <option value="">Seleccionar una Autoridad</option>
+        <option value="juez1">Juez 1</option>
+        <option value="juez2">Juez 2</option>
+        <option value="juez3">Juez 3</option>
+        <option value="juez4">Juez 4</option>
+      </select>
+    </div>
+
+    <div class="campo">
+      <h3>Fecha</h3>
+      <input type="date" id="fecha">
+    </div>
+
+    <div class="campo">
+      <h3>Tipo</h3>
+      <select id="tipos">
+        <option value="">Seleccionar un Tipo</option>
+        <option value="tipo1">Tipo 1</option>
+        <option value="tipo2">Tipo 2</option>
+        <option value="tipo3">Tipo 3</option>
+        <option value="tipo4">Tipo 4</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="tabla-container">
+  <table class="tabla-audiencias">
+    <thead>
+      <tr>
+        <th>CUIJ</th>
+        <th>CARÁTULA</th>
+        <th>TIPO</th>
+        <th>FECHA Y HORA</th>
+        <th>JUEZ - FISCAL</th>
+        <th>SALA</th>
+        <th>ESTADO</th>
+        <th>ACCIONES</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>23412</td>
+        <td>Pérez</td>
+        <td>Oral</td>
+        <td>08/11/2025 - 14:30</td>
+        <td>Dr. López - Dra. Torres</td>
+        <td>#1</td>
+        <td><span class="estado circulo-verde"></span></td>
+        <td class="acciones">
+          <button class="btn-editar">
+            <span class="material-symbols-outlined">edit</span>
+          </button>
+          <button class="btn-eliminar">
+            <span class="material-symbols-outlined">delete</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>23413</td>
+        <td>Gómez</td>
+        <td>Virtual</td>
+        <td>09/11/2025 - 09:00</td>
+        <td>Dr. Ruiz - Dra. Molina</td>
+        <td>#2</td>
+        <td><span class="estado circulo-rojo"></span></td>
+        <td class="acciones">
+          <button class="btn-editar">
+            <span class="material-symbols-outlined">edit</span>
+          </button>
+          <button class="btn-eliminar">
+            <span class="material-symbols-outlined">delete</span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="8"></td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
